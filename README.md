@@ -15,12 +15,10 @@ The dataset used is from [Kaggle](https://www.kaggle.com/paultimothymooney/chest
 
 
 X-ray of a patient with normal lungs:
-
-<img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fprod-images-static.radiopaedia.org%2Fimages%2F220869%2F76052f7902246ff862f52f5d3cd9cd_big_gallery.jpg&tbnid=zTJ937SDW95esM&vet=10CBIQxiAoAmoXChMImOj31tiJhQMVAAAAAB0AAAAAEAc..i&imgrefurl=https%3A%2F%2Fradiopaedia.org%2Fcases%2Fnormal-chest-x-ray&docid=Y1P5p-Fptb_PIM&w=630&h=630&itg=1&q=normal%20lung%20%20xray&ved=0CBIQxiAoAmoXChMImOj31tiJhQMVAAAAAB0AAAAAEAc" />
+!(https://github.com/mark-kibui/Phase-4-Project/blob/main/Images/Normal%20Lung_xray.jpg)
 
 X-ray of a patient with pneumonia:
-
-<img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.princeton.edu%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fscale_1440%2Fpublic%2Fimages%2F2020%2F05%2Fx-ray-image-2b_full.jpg%3Fitok%3D2FO93vqG&tbnid=TTU_Mvn5ygFA_M&vet=10CAIQxiAoAGoXChMIgOiui9mJhQMVAAAAAB0AAAAAEAc..i&imgrefurl=https%3A%2F%2Fwww.princeton.edu%2Fnews%2F2020%2F05%2F21%2Fai-tool-gives-doctors-new-look-lungs-treating-covid-19&docid=L9xQGxOLjznidM&w=1040&h=1040&itg=1&q=pneumonia%20infected%20xray&ved=0CAIQxiAoAGoXChMIgOiui9mJhQMVAAAAAB0AAAAAEAc" />
+!(https://github.com/mark-kibui/Phase-4-Project/blob/main/Images/Infected%20lung_xray.jpg)
 
 - The training images were 1342 for the Normal (healthy) cases and 3876 for Pneumonia cases
 - The test images were 234 for the Normal cases and 390 for Pneumonia cases
