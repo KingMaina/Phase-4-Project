@@ -34,19 +34,35 @@ We also checked for the average image size of the training, testing and validati
 ## Modeling
 ### CNN
 
-In the modeling phase, we developed and trained two distinct Convolutional Neural Network (CNN) architectures tailored to our binary image classification task of pneumonia diagnosis from X-ray images. Our first model, the baseline CNN, served as a foundational architecture, while the second model leveraged the ResNet50V2 architecture, known for its depth and performance. Leveraging insights from exploratory data analysis (EDA), we optimized these models for image size, class distribution, and regularization techniques to mitigate overfitting. Through rigorous experimentation and evaluation, we sought to identify the most effective model configurations, utilizing metrics such as accuracy and loss to guide refinement and ensure robust, high-performing classifiers capable of accurately discerning normal from pneumonia cases in X-ray images.
+We conducted an extensive model comparison, evaluating various architectures including a baseline CNN, a tuned CNN with hyperparameter optimization, a modified CNN architecture, and a pre-trained ResNet50v2 model. The baseline CNN model, served as a foundational architecture, then tuned CNN with hyperparameter optimization and a modified CNN architecture. Lastly, a pretrained ResNet50V2 model, known for its depth and performance. Leveraging insights from exploratory data analysis (EDA), we optimized these models for image size, class distribution, and regularization techniques to mitigate overfitting. Through rigorous experimentation and evaluation, we sought to identify the most effective model configurations, utilizing metrics such as accuracy and loss to guide refinement and ensure robust, high-performing classifiers capable of accurately discerning normal from pneumonia cases in X-ray images.
 
 #### CNN Model Performance
+Parameters for the CNN model built with Keras
 
-- Validation Loss: 30.517587661743164
+| Layer (type) | Output Shape | Param # |
+|---|---|---|
+| conv2d_6 (Conv2D) | (None, 222, 222, 32) | 896 |
+| max_pooling2d_6 (MaxPooling2D) | (None, 111, 111, 32) | 0 |
+| conv2d_7 (Conv2D) | (None, 109, 109, 64) | 18,496 |
+| max_pooling2d_7 (MaxPooling2D) | (None, 54, 54, 64) | 0 |
+| conv2d_8 (Conv2D) | (None, 52, 52, 128) | 73,856 |
+| max_pooling2d_8 (MaxPooling2D) | (None, 26, 26, 128) | 0 |
+| flatten_2 (Flatten) | (None, 86528) | 0 |
+| dense_4 (Dense) | (None, 256) | 22,151,424 |
+| dropout_2 (Dropout) | (None, 256) | 0 |
+| dense_5 (Dense) | (None, 128) | 32,896 |
+| dropout_3 (Dropout) | (None, 128) | 0 |
+| dense_6 (Dense) | (None,
+
+- Validation Loss: 30.5
 -Validation Accuracy: 0.5
--Test Loss: 19.448657989501953
+-Test Loss: 19.4
 -Test Accuracy: 0.625
 
 Validation accuracy of 0.5 wasn't ideal but could be improved by training more on the dataset. In our case we utilized a different cnn architecture.
 
 ### ResNet50V2
-The results were as follows:
+The performance is as follows:
 
 -Validation Loss: 0.2682477533817291
 -Validation Accuracy: 0.875
