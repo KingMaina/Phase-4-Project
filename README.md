@@ -13,9 +13,9 @@ The dataset used is from [Kaggle](https://www.kaggle.com/paultimothymooney/chest
 
 ## Exploratory Data Analysis
 
-!["X-ray image of a patient with normal lungs"]('Images/Normal Lung_xray.jpg')
+!["X-ray image of a patient with normal lungs"]('Images/Normal_Lung_xray.jpg')
 
-!["X-ray image of a patient with pneumonia"]('Images/Infected lung_xray.jpg')
+!["X-ray image of a patient with pneumonia"]('Images/Infected_lung_xray.jpg')
 
 - The training images were 1342 for the Normal (healthy) cases and 3876 for Pneumonia cases
 - The test images were 234 for the Normal cases and 390 for Pneumonia cases
