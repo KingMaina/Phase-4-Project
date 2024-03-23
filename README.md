@@ -15,10 +15,11 @@ The dataset used is from [Kaggle](https://www.kaggle.com/paultimothymooney/chest
 
 
 X-ray of a patient with normal lungs:
-!(https://github.com/mark-kibui/Phase-4-Project/blob/main/Images/Normal%20Lung_xray.jpg)
+![](https://github.com/mark-kibui/Phase-4-Project/blob/main/Images/Normal%20Lung_xray.jpg)
 
 X-ray of a patient with pneumonia:
-!(https://github.com/mark-kibui/Phase-4-Project/blob/main/Images/Infected%20lung_xray.jpg)
+![](https://github.com/mark-kibui/Phase-4-Project/blob/main/Images/Infected%20lung_xray.jpg)
+
 
 - The training images were 1342 for the Normal (healthy) cases and 3876 for Pneumonia cases
 - The test images were 234 for the Normal cases and 390 for Pneumonia cases
