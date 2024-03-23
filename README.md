@@ -13,7 +13,7 @@ The dataset used is from [Kaggle](https://www.kaggle.com/paultimothymooney/chest
 
 ## Exploratory Data Analysis
 
-!["X-ray image of a patient with normal lungs"](Images/Normal_Lung_xray.png)
+!["X-ray image of a patient with normal lungs"](./Images/Normal_Lung_xray.png)
 
 !["X-ray image of a patient with pneumonia"](Images/Infected_lung_xray.png)
 
