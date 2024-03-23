@@ -16,11 +16,11 @@ The dataset used is from [Kaggle](https://www.kaggle.com/paultimothymooney/chest
 
 X-ray of a patient with normal lungs:
 
-<img src="........Github........" />
+<img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fprod-images-static.radiopaedia.org%2Fimages%2F220869%2F76052f7902246ff862f52f5d3cd9cd_big_gallery.jpg&tbnid=zTJ937SDW95esM&vet=10CBIQxiAoAmoXChMImOj31tiJhQMVAAAAAB0AAAAAEAc..i&imgrefurl=https%3A%2F%2Fradiopaedia.org%2Fcases%2Fnormal-chest-x-ray&docid=Y1P5p-Fptb_PIM&w=630&h=630&itg=1&q=normal%20lung%20%20xray&ved=0CBIQxiAoAmoXChMImOj31tiJhQMVAAAAAB0AAAAAEAc" />
 
 X-ray of a patient with pneumonia:
 
-<img src=".............Github.........." />
+<img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fwww.princeton.edu%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fscale_1440%2Fpublic%2Fimages%2F2020%2F05%2Fx-ray-image-2b_full.jpg%3Fitok%3D2FO93vqG&tbnid=TTU_Mvn5ygFA_M&vet=10CAIQxiAoAGoXChMIgOiui9mJhQMVAAAAAB0AAAAAEAc..i&imgrefurl=https%3A%2F%2Fwww.princeton.edu%2Fnews%2F2020%2F05%2F21%2Fai-tool-gives-doctors-new-look-lungs-treating-covid-19&docid=L9xQGxOLjznidM&w=1040&h=1040&itg=1&q=pneumonia%20infected%20xray&ved=0CAIQxiAoAGoXChMIgOiui9mJhQMVAAAAAB0AAAAAEAc" />
 
 - The training images were 1342 for the Normal (healthy) cases and 3876 for Pneumonia cases
 - The test images were 234 for the Normal cases and 390 for Pneumonia cases
@@ -56,19 +56,30 @@ The results were as follows:
 
 The validation accuracy of 0.87 performed better and ResNet50V2 proved to be better for identify pneumonia.
 
+#### Model Comparison
+
+| Sn. No. | Model Name                | Model Architecture             | Hyperparameters                                | Training Time | Validation Accuracy | Test Accuracy | Test Loss |
+|---------|---------------------------|--------------------------------|-----------------------------------------------|---------------|---------------------|---------------|-----------|
+| 1       | Baseline Model            | CNN with original architecture | Adam optimizer, learning rate=0.001           | 48.40 mins        | 0.50                | 0.38          | 172.32      |
+| 2       | Tuned Baseline Model      | CNN with original architecture | Adam optimizer, learning rate=0.001, early stopping | 26.45 mins        | 0.56                | 0.42          | 40.07      |
+| 3       | Different Architecture Model | CNN with modified architecture | Adam optimizer, learning rate=0.001, early stopping           | 10.25 mins       | 0.45                | 0.63         | 19.45      |
+| 4       | ResNet50v2 Model          | Pretrained ResNet50v2          | Adam optimizer, learning rate=0.0001          | 48 mins       | 0.88                | 0.92          | 0.23      |
+
+
 ## Conclusion
+
+ResNet50v2 performed best in terms of accuracy. This pre-trained model offers a significant advantage; it can accelerate the development of reliable diagnostic tools. However, there's a trade-off to consider. ResNet50v2 requires more training time compared to other models. Therefore, the ideal choice depends on the specific situation. If getting the most accurate results is paramount, ResNet50v2 stands out as a powerful option. But if speed is a critical factor, another model might be a better fit.
 
 ## Recommendations
 
-
-
-
-
-- Get more data for the validation set to gain a better/realistic model accuracy
-
-- Trying/explore different parameters and layers for the neural network modeling
-
-- Create more unique images by augmenting some of given data to give the machine more data to train from
+While the results from the models are positive, there can be further improvements to get the 
+most accurate diagnoses using deep learning.
+###### Accuracy: 
+Optimization algorithms can be employed to refine the existing deep learning models
+###### Deployment:
+Focus on creating a system that functions effectively with limited computational resources.
+###### Validation:
+Validating the developed model through clinical trials is needed to ensure its reliability for diagnoses.
 
 
 
